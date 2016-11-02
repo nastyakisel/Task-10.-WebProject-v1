@@ -1,0 +1,20 @@
+DROP SCHEMA IF EXISTS online_apteka;
+
+CREATE SCHEMA IF NOT EXISTS online_apteka
+CHARACTER SET utf8;
+
+USE online_apteka;
+
+CREATE TABLE User (
+  ID INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  USER_NAME VARCHAR(255) NOT NULL,
+  PASSWORD VARCHAR(255) NOT NULL
+  
+);
+
+INSERT INTO User (USER_NAME, PASSWORD) VALUES ('ivanov@mail.ru', 'fgdhk34');
+INSERT INTO User (USER_NAME, PASSWORD) VALUES ('metl@mail.ru', 'dkljhs');
+INSERT INTO User (USER_NAME, PASSWORD) VALUES ('djoli@mail.ru', 'qwerty');
+INSERT INTO User (USER_NAME, PASSWORD) VALUES ('timur@mail.ru', 'timur');
+INSERT INTO User (USER_NAME, PASSWORD) VALUES ('nasta@tut.by', '123456');
+INSERT INTO User (USER_NAME, PASSWORD) VALUES ('vlad@tut.by', 'fskjyy');

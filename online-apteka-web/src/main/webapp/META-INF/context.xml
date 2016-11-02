@@ -1,0 +1,10 @@
+<Context>
+
+	<Resource name="jdbc/online_apteka" auth="Container"
+			type="javax.sql.DataSource" maxActive="100" 
+			maxIdle="30" maxWait="10000"
+			username="root" 
+			password="root"
+			driverClassName="jdbc.driver.name"
+			url="jdbc:mysql://localhost:3306/online_apteka"/>
+</Context>

@@ -15,17 +15,7 @@
 		<fmt:message key="application.title" bundle="${msgs}" />
 	</title>
 </head>
+<%@include file="/WEB-INF/pages/userPage.jsp" %>
+<br />
 
-<body>
-	<div class="registration">
-		
-		<a href = "registrationPage.html"><fmt:message key="startPage.registration" bundle="${msgs}" /></a>
-	</div>
-	
-	<div class="login">
-		
-		<a href = "loginPage.html"><fmt:message key="startPage.login" bundle="${msgs}" /></a>
-		
-	</div>
-</body>
-</html>
+<%@include file="/WEB-INF/pages/showGoods.jsp" %>

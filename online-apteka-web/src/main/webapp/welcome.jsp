@@ -3,7 +3,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <!DOCTYPE html>
-<fmt:setLocale value="${sessionScope.requestLocale}"/>
+
 <fmt:setBundle basename="com.finalproject.onlineapteka.messages.msgs" var="msgs" />
 
 <head>
@@ -17,10 +17,16 @@
 </head>
 
 <body>
-	<h1><fmt:message key="welcomePage.header" bundle="${msgs}" /></h1>
+	<h1>Welcome</h1>
 	<div class="login">
 		
-			<a href = "controller.html?action=logout"><fmt:message key="loginOut.Out" bundle="${msgs}" /></a>
+		<!-- <a href = "loginOut.html"><fmt:message key="loginOut.Out" bundle="${msgs}" /></a>-->
+		<a href = "controller.html?action=logout" type="submit">Выйти</a>
+		<form method="post" action="controller.html" >
+		<input type="hidden" name="action" value="logout" />
+			
+			<br />
+			<input type="submit" value="Выйти" />
 		</form>
 	</div>
 	<c:out value="${session_Id}" />

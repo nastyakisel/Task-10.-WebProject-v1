@@ -3,11 +3,12 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <!DOCTYPE html>
+<head>
+<meta charset="utf-8">
 <fmt:setLocale value="${sessionScope.requestLocale}"/>
 <fmt:setBundle basename="com.finalproject.onlineapteka.messages.msgs" var="msgs" />
 
-<head>
-	<meta charset="utf-8">
+
 
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 
@@ -16,23 +17,25 @@
 	</title>
 </head>
 
+
 <body>
-	<h1><fmt:message key="welcomePage.header" bundle="${msgs}" /></h1>
+
+
+	<div class="registration">
+		
+		<a href = "registration.jsp"><fmt:message key="startPage.registration" bundle="${msgs}" /></a>
+	</div>
+	
 	<div class="login">
 		
-			<a href = "controller.html?action=logout"><fmt:message key="loginOut.Out" bundle="${msgs}" /></a>
-		</form>
+		<a href = "login.jsp"><fmt:message key="startPage.login" bundle="${msgs}" /></a>
+		
 	</div>
-	<c:out value="${session_Id}" />
-					<br />
-	
-					
-					<br />
-						<c:out value="${session_user.id}" />
-					<br />
-						<c:out value="${session_user.userName}" />
-					
-				
-
+	<div class="locale">
+		
+		<a href = "controller.html?locale=ru"><fmt:message key="startPage.ruLocale" bundle="${msgs}" /></a>
+		<a href = "controller.html?locale=en"><fmt:message key="startPage.enLocale" bundle="${msgs}" /></a>
+		
+	</div>
 </body>
 </html>

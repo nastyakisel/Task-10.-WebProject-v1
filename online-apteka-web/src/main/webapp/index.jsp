@@ -13,7 +13,7 @@
 
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 
-	<meta http-equiv="refresh" content="0; url=goodsList.html">
+	<meta http-equiv="refresh" content="0; url=controller.html?action=getAllGoods">
 
 	<title>
 		<fmt:message key="application.title" bundle="${msgs}" />

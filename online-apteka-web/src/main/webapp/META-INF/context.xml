@@ -7,4 +7,9 @@
 			password="root"
 			driverClassName="com.mysql.cj.jdbc.Driver"
 			url="jdbc:mysql://localhost:3306/online_apteka?serverTimezone=UTC"/>
+			
 </Context>
+
+
+<!--  driverClassName="jdbc.driver.name"
+jdbc:mysql://localhost:3306/online_apteka-->

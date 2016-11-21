@@ -13,7 +13,7 @@ import com.finalproject.onlineapteka.service.exception.ServiceException;
 
 public class UserServiceImpl implements UserService{
 	
-	//@Override
+	@Override
 	public User getUser(String userName) throws ServiceException {
 		UserDao userDao = DAOFactory.getInstance().getUserDao();
 		User user = null;
@@ -29,7 +29,7 @@ public class UserServiceImpl implements UserService{
 		return user;
 	}
 	
-	
+	@Override
 	public void addUserToBb(User user) throws ServiceException {
 		UserDao userDao = DAOFactory.getInstance().getUserDao();
 				
@@ -42,7 +42,5 @@ public class UserServiceImpl implements UserService{
 			
 			e.printStackTrace();
 		}
-		
-		
 	}
 }
